@@ -1,0 +1,28 @@
+
+header {
+  background: #181D5B;
+  color: #fff;
+  padding: 50px;
+  border: solid;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: fantasy;
+
+}
+
+p {
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-style: normal;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
