@@ -4,7 +4,7 @@
   var user = prompt('What is your name?');
   console.log('user:' + user);
 //alert will show user's input and alert with following string
-  alert('Hello there, ' + user + '. I\'m going to ask you a few questions');
+    alert('Hello there, ' + user + '. I\'m going to ask you a few questions');
 //second question is a yes or no question which works on (if/else) statement
   var answer = prompt(user + ', Please try and guess a few questions which will help you learn about me. Please answer with yes or no. Do you think I love to code?');
   console.log('users answer:' + answer);
@@ -30,31 +30,43 @@
 
   var myCooking = prompt('Do I love to cook? yes or no?').toLowerCase();
   if (myCooking === 'yes') {
-  alert('Cooking is my favorite thing!');
-  }
-  else {
-  alert('Nope, sorry you guessed wrong');
-  }
+    alert('Cooking is my favorite thing!');
+    } else {
+    alert('Nope, sorry you guessed wrong');
+    }
 //This is my fourth question asking about animals. It's a yes or no question
   var animals = prompt('Do I like animals? YES or NO?').toUpperCase();
 
   if (animals === 'YES') {
-  alert('Correct! I do like animals');
-  }
-  else {
-  alert('No, sorry I love animals!');
-  }
+    alert('Correct! I do like animals');
+    } else {
+    alert('No, sorry I love animals!');
+    }
+
+  var animals = prompt('Do I like pizza? YES or NO?').toUpperCase();
+
+  if (animals === 'YES') {
+    alert('Yes! its so delcious');
+    } else {
+      alert('No, unfortunately thats wrong!');
+    }
+
+  var animals = prompt('Am I from Seattle? YES or NO?').toUpperCase();
+
+  if (animals === 'NO') {
+    alert('Correct, I am actually from Cincinnati');
+    } else {
+    alert('No, I am actually from Cincinnati!');
+    }
 //This is my fifth question asking between three fruit choices
   var fruit = prompt('Do you think I like either apples or bananas?').toLowerCase();
   console.log(fruit);
 
   if (fruit === 'bananas') {
     alert('Bananas are so delcious!');
-  }
-  if (fruit === 'apples') {
+    } if (fruit === 'apples') {
     alert('apples are so refreshing!');
-  }
-  else {
+    } else {
     alert('I prefer something else');
 
     alert("Thanks for playing!")
