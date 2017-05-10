@@ -57,4 +57,5 @@
   else {
     alert('I prefer something else');
 
+    alert("Thanks for playing!")
 };
