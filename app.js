@@ -19,6 +19,7 @@ if(answer3 === 'yes' || answer3 === 'y')
   alert('Answer with either yes or no / y or n');
 }
 
+
 //Q2 is a Y/N that utilizes if else
  var answer2 = prompt('Do you think I have any pets?').toLowerCase();
 
@@ -33,6 +34,8 @@ if(answer3 === 'yes' || answer3 === 'y')
   } else {
     alert('Answer with either yes or no / y or n');
   }
+
+
 //Q3 is another if else
 var answer4 = prompt('Do I like to coding?').toLowerCase();
 console.log('The user answered ' + answer4 + ' to question 4.');
@@ -47,6 +50,8 @@ console.log('The user answered ' + answer4 + ' to question 4.');
   {
     alert('Answer with either yes or no / y or n');
   }
+
+
 //Q4 is the another Y/N with if else
 var answer5 = prompt('Did I work 10 years in Food Technology?').toLowerCase();
 console.log('The user answered ' + answer5 + ' to question 5.');
@@ -58,6 +63,8 @@ console.log('The user answered ' + answer5 + ' to question 5.');
   } else {
     alert('Answer with either yes or no / y or n');
   }
+
+
 //Q5 is a Y/N that uses a if else statement
 var answer1 = prompt('Do you think I like to travel and cook?').toLowerCase();
 console.log('The user answered ' + answer1 + ' to question 1.');
@@ -73,6 +80,8 @@ console.log('The user answered ' + answer1 + ' to question 1.');
     alert('Answer with either yes or no / y or n');
   }
   }
+
+
 //Q6 is a numerical guessing game that utilizes a do/while loop. My game will try to help the user with hints
 var question6CorrectAnswer = 29;
 var question6GuessCount = 0;
@@ -96,6 +105,8 @@ var question6GuessCount = 0;
   if(question6GuessCount >= 5){
     alert('Aw shucks you ran out of guesses');
   }
+
+
 //Q7 is a mess of a question but it uses a loop inside of a loop. It has an array that will print if the user succeeds
 var question7GuessCount = 0;
 var q7UserCorrect = false;
