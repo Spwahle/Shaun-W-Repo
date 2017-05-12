@@ -79,30 +79,50 @@ function Question5() {
     }
 }
 
+// function Question6() {
+//
+//     //Q6 is a numerical guessing game that utilizes a do/while loop. My game will try to help the user with hints
+//     var question6CorrectAnswer = 29;
+//     var question6GuessCount = 0;
+//     do {
+//         question6GuessCount++;
+//         var answer6 = parseInt(prompt('How old do you think I am?'));
+//         console.log('The user answered ' + answer6 + ' to question 6.');
+//         if (answer6 === question6CorrectAnswer) {
+//             alert('You\'re right, congratulations!  And it only took you ' + question6GuessCount + ' guesses!');
+//             userAnswerTotal++;
+//             break;
+//         } else if (answer6 > question6CorrectAnswer && answer6 >= 31) {
+//             alert('Too high');
+//         } else if (answer6 < question6CorrectAnswer && answer6 <= 28) {
+//             alert('Too low');
+//         } else {
+//             alert('You need to enter a number please');
+//           }
+//       while(question6GuessCount < 4);
+//       if(question6GuessCount >= 5){
+//         alert('Aw shucks you ran out of guesses');
+//       }
+//     }
 function Question6() {
+    // Asks the user to guess a number between 1 and 100
+    var myAge = 29; // Sets the number to guess.
+    var q6tries = 0; // Keeps track of the number of attempted answers.
 
-    //Q6 is a numerical guessing game that utilizes a do/while loop. My game will try to help the user with hints
-    var question6CorrectAnswer = 29;
-    var question6GuessCount = 0;
-    do {
-        question6GuessCount++;
-        var answer6 = parseInt(prompt('How old do you think I am?'));
-        console.log('The user answered ' + answer6 + ' to question 6.');
-        if (answer6 === question6CorrectAnswer) {
-            alert('You\'re right, congratulations!  And it only took you ' + question6GuessCount + ' guesses!');
+    while (q6tries < 4) {
+        var answer6 = parseInt(prompt('Guess how old I am (You have ' + (4 - q6tries) + ' tries remaining.)')); // How many tries they have left.
+        if (answer6 === myAge) {
+            alert('You guessed it! I am ' + myAge + '!');
+            q6tries = 4;
             userAnswerTotal++;
-            break;
-        } else if (answer6 > question6CorrectAnswer && answer6 >= 31) {
-            alert('Too high');
-        } else if (answer6 < question6CorrectAnswer && answer6 <= 28) {
-            alert('Too low');
+        } else if (answer6 < myAge) {
+            alert('Too low! I am older than that!');
+        } else if (answer6 > myAge) {
+            alert('Too high, I am younger than that!');
         } else {
-            alert('You need to enter a number please');
+            alert('Try again--enter a number between 1 and 100 this time!');
         }
-    }
-    while (question6GuessCount < 4);
-    if (question6GuessCount >= 5) {
-        alert('Aw shucks you ran out of guesses');
+        q6tries++;
     }
 }
 
@@ -141,7 +161,7 @@ Question3();
 Question4();
 Question5();
 Question6();
-Question7();¸
+Question7();
 //this alert should print out with the user's name and the total number of correct answers
 alert('Thanks for playing my guessing game,' + userName + ', you got ' + userAnswerTotal + ' questions right out of 7.');
 console.log('The user got ' + userAnswerTotal + ' questions right out of 7.');
