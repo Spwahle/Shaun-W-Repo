@@ -1,4 +1,6 @@
 'use strict';
+function userButtonClick() {
+
 
 var userName = prompt('Hey, how\'s it going? Want to play a game? First what is your name?');
 alert('Welcome ' + userName + ', I\'m excited for you to play!');
@@ -22,6 +24,7 @@ function Question1() {
 function Question2() {
     //Q2 is a Y/N that utilizes if else
   var answer2 = prompt('Do you think I have any pets?').toLowerCase();
+  //answer2 = answer2.toLowerCase();
 
   console.log('The user answered ' + answer2 + ' to question 2.');
 
@@ -165,3 +168,4 @@ Question7();
 //this alert should print out with the user's name and the total number of correct answers
 alert('Thanks for playing my guessing game,' + userName + ', you got ' + userAnswerTotal + ' questions right out of 7.');
 console.log('The user got ' + userAnswerTotal + ' questions right out of 7.');
+}
