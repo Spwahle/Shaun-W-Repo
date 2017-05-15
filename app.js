@@ -1,5 +1,5 @@
 'use strict';
-function userButtonClick() {
+//function userButtonClick() {
 
 
 var userName = prompt('Hey, how\'s it going? Want to play a game? First what is your name?');
